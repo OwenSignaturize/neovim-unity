@@ -47,20 +47,20 @@ steps and jump to [Installing Dependencies](#installing-dependencies). It is
 best however to take a look into how the C# LSP and Unity debugging are
 configured in [**CGNvim**][cgnvim] to avoid annoying pitfalls.
 
-If you want to use the configuration proposed by this project, make sure to do
-a backup of your own configuration (assuming you have one):
+    If you want to use the configuration proposed by this project, make sure to do
+    a backup of your own configuration (assuming you have one):
 
-```bash
-mv ~/.config/nvim ~/.config/nvim.bak
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
-```
+    ```bash
+    mv ~/.config/nvim ~/.config/nvim.bak
+    mv ~/.local/share/nvim ~/.local/share/nvim.bak
+    ```
 
 1. Then clone the [**CGNvim**][cgnvim] repository (Neovim configuration for general
 purpose computer graphics development):
 
-```bash
-git clone https://github.com/walcht/CGNvim.git ~/.config/nvim
-```
+    ```bash
+    git clone https://github.com/walcht/CGNvim.git ~/.config/nvim
+    ```
 
 ### Installing Dependencies
 
@@ -81,14 +81,14 @@ official source:
 3. open the Roslyn LSP configuration file (or your custom Neovim's Roslyn LS
 configuration file) using some text editor:
 
-```bash
-nvim ~/.config/nvim/lua/cgnvim/lsps/roslyn_ls.lua
-```
+    ```bash
+    nvim ~/.config/nvim/lua/cgnvim/lsps/roslyn_ls.lua
+    ```
 
 and change the `cmd` path to where you extracted/installed the Roslyn LSP:
 
 ```lua
-  cmd = {
+cmd = {
     'dotnet',
     '<roslyn_ls_path>/Microsoft.CodeAnalysis.LanguageServer.dll',
     '--logLevel', -- this property is required by the server
@@ -97,7 +97,7 @@ and change the `cmd` path to where you extracted/installed the Roslyn LSP:
     fs.joinpath(uv.os_tmpdir(), 'roslyn_ls/logs'),
     '--stdio',  -- adjust accordingly in case you want to communicate with the
                 -- LSP via TCP
-  },
+},
 ```
 
 where `<roslyn_ls_path>` has to be the folder you extracted the Roslyn LSP NuGet
