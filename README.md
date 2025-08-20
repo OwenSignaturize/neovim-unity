@@ -34,6 +34,70 @@ Neovim configuration.
 This Installation guide targets **Linux distributions**. A guide on how to
 properly set this for Windows(and MacOS) is yet to be provided.
 
+Neovim installation commands on:
+
+<details><summary>Ubuntu</summary>
+
+```shell
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo apt update
+sudo apt install make gcc ripgrep unzip git xclip neovim
+```
+
+</details>
+
+<details><summary>Debian</summary>
+
+```shell
+sudo apt update
+sudo apt install make gcc ripgrep unzip git xclip curl
+
+# Now we install nvim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim-linux-x86_64
+sudo mkdir -p /opt/nvim-linux-x86_64
+sudo chmod a+rX /opt/nvim-linux-x86_64
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+
+# make it available in /usr/local/bin, distro installs to /usr/bin
+sudo ln -sf /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/
+```
+
+</details>
+
+<details><summary>Fedora Install Steps</summary>
+
+```shell
+sudo dnf install -y gcc make git ripgrep fd-find unzip neovim
+```
+
+</details>
+
+<details><summary>Arch</summary>
+
+```shell
+sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
+```
+
+</details>
+
+<details><summary>Windows</summary>
+
+1. install [chocolatey](https://chocolatey.org/install)
+either follow the instructions on the page or use winget,
+run in cmd as **admin**:
+    ```shell
+    winget install --accept-source-agreements chocolatey.chocolatey
+    ```
+
+2. install all requirements using choco, exit the previous cmd and
+open a new one so that choco path is set, and run in cmd as **admin**:
+    ```shell
+    choco install -y neovim git ripgrep wget fd unzip gzip mingw make
+    ```
+
+</details>
+
 This project has been tested with **Unity6000.1 LTS**. Any tests on other
 Unity versions are extremely appreciated!
 
@@ -153,26 +217,6 @@ worse performance the more the selected):
 
 Now try to open a C# script from you project and keep an eye on the
 notifications that might pop-up.
-
-#### Optional Dependencies
-
-The below dependencies can be installed for a better development experience,
-please take a look at the respective links for an up-to-date installation
-instructions.
-
-- **[wmctrl][wmctrl_installation]**: (optional) for focusing on Neovim
-window instance on Linux. On Debian-based distros, install using:
-
-```bash
-sudo apt-get install wmctrl
-```
-
-- **[xclip][xclip_repo]**: (optional) for adding clipboard support
-for Neovim on Linux. On Debian-based distros, install using:
-
-```bash
-sudo apt-get install xclip
-```
 
 #### Installing Plugin Dependencies
 
