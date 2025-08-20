@@ -366,9 +366,10 @@ than welcome (especially regarding C# LSP details).
 
 ## License
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-See LICENSE.txt file for more info.
+MIT License. See LICENSE.txt file for more info.
 
+[showcase_0]: https://github.com/user-attachments/assets/daf91384-798c-4515-8b99-09bc49361b8c
+[showcase_1]: https://github.com/user-attachments/assets/b0212c86-516f-45cf-87be-fc6dee90c08f
 [neovim_installation]: https://github.com/neovim/neovim/tags
 [wmctrl_installation]: https://linux.die.net/man/1/wmctrl
 [xclip_repo]: https://github.com/astrand/xclip
@@ -380,8 +381,6 @@ See LICENSE.txt file for more info.
 [depracated_unity_debug]: https://github.com/Unity-Technologies/vscode-unity-debug
 [stupid_license]: https://marketplace.visualstudio.com/items/VisualStudioToolsForUnity.vstuc/license
 [unity_dap]: https://github.com/walcht/unity-dap
-[showcase_0]: https://raw.githubusercontent.com/walcht/walcht/refs/heads/master/images/neovim-unity-showcase-0.png
 [cgnvim]: https://github.com/walcht/CGNvim
 [cgnvim_unity_dap]: https://github.com/walcht/CGNvim/blob/master/lua/cgnvim/daps/unity.lua
-[showcase_1]: https://raw.githubusercontent.com/walcht/walcht/refs/heads/master/images/neovim-unity-showcase-1.png
 [mono]: https://www.mono-project.com/download/stable/
