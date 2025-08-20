@@ -237,7 +237,7 @@ To add debugging support for Unity, you have to:
 2. install the [Unity debug adapter][unity_dap] by cloning the repo and building it from source:
 
      ```bash
-     git clone https://github.com/walcht/unity-dap.git
+     git clone --recurse-submodules https://github.com/walcht/unity-dap.git
      cd unity-dap
      dotnet build unity-debug-adapter/unity-debug-adapter.csproj --configuration=Release
      ```
