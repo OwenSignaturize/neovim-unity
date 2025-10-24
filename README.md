@@ -139,7 +139,7 @@ official source:
     1. on Windows: [Roslyn LS Windows][roslyn_lsp_windows]
     1. on MacOS: [Roslyn LS MacOS][roslyn_lsp_macos]
 
-2. extract it (NugGets are ZIP archives) at some location of your choice
+2. extract it (NugGets are ZIP archives) at some location of your choice. Find the LanguageServer folder for your architecture.
 (that we hereafter refer to as **<roslyn_ls_path>**):
 
 3. open the Roslyn LSP configuration file (or your custom Neovim's Roslyn LS
